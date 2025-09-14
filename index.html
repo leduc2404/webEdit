@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Automation Tool</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Nạp thư viện FFmpeg từ CDN -->
-    <script src="https://unpkg.com/@ffmpeg/ffmpeg@0.12.10/dist/umd/ffmpeg.min.js"></script>
+
+    <!-- Nạp thư viện FFmpeg từ CDN VÀ script.js, cả hai đều có defer -->
+    <!-- defer đảm bảo chúng được thực thi theo đúng thứ tự sau khi trang được tải -->
+    <script src="https://unpkg.com/@ffmpeg/ffmpeg@0.12.10/dist/umd/ffmpeg.min.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <main class="container">
