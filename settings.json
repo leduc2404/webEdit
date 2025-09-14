@@ -1,0 +1,15 @@
+{
+    "api_keys": {
+        "google_gemini": "AIzaSyBndiVtEPWI_zrsC9M5hkC2uhiDesDVEVU",
+        "fpt_ai": "B5NVtJ9YRZo2Q2y7CwPIwKRAn9TzQnN8"
+    },
+    "gemini_settings": {
+        "prompt": "Hãy viết cho tôi một câu hook bán hàng ngắn gọn, hấp dẫn, bằng tiếng Việt, độ dài trong khoảng 25–35 chữ, không được quá ít. Nội dung nhấn mạnh sự cần thiết của sản phẩm, mang phong cách trẻ trung, dễ gây chú ý trên mạng xã hội, bắt trend. Chỉ xuất ra duy nhất văn bản thô, không được sử dụng từ tiếng Anh như big size,..., không thêm tiêu đề, nhắc nhở, icon hay bất kỳ yếu tố nào khác, không được sai chính tả"
+    },
+    "tts_settings": {
+        "voice": "banmai",
+        "speed": 1.2,
+        "max_retries": 10,
+        "retry_delay": 2
+    }
+}

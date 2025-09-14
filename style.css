@@ -1,0 +1,182 @@
+:root {
+    --bg-color: #121212;
+    --card-color: #1e1e1e;
+    --primary-color: #2ECC71;
+    --primary-hover: #27ae60;
+    --text-color: #e0e0e0;
+    --text-muted: #888;
+    --border-color: #333;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+.card {
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.main-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.file-label {
+    background-color: #333;
+    color: var(--text-color);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px dashed var(--text-muted);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.file-label:hover {
+    background-color: #444;
+    border-color: var(--primary-color);
+}
+
+#start-btn {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#start-btn:hover:not(:disabled) {
+    background-color: var(--primary-hover);
+}
+
+#start-btn:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.status-area {
+    text-align: center;
+    color: var(--text-muted);
+}
+
+.progress-bar-container {
+    width: 100%;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 1rem;
+    height: 10px;
+}
+
+#progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: var(--primary-color);
+    transition: width 0.2s ease-in-out;
+}
+
+.output-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#output-video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+#download-link {
+    display: block;
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 0.8rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#download-link:hover {
+    background-color: #2980b9;
+}
+
+.settings-area details {
+    color: var(--text-muted);
+}
+
+.settings-area summary {
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.settings-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.settings-card label {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.settings-card input, .settings-card textarea {
+    width: 100%;
+    padding: 0.7rem;
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 6px;
+    color: var(--text-color);
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
